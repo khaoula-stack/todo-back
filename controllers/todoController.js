@@ -20,4 +20,12 @@ app.post('/add',(req,res)=>{
         res.status(400).send(error)
     })
 })
+app.get('/list',(req,res)=>res.status(200).send({message:'list todo'}))
+app.post('/deletetodo',(req,res)=>res.status(200).send({message:'delete work'}))
+app.post('/deletedone',(req,res)=>res.status(200).send({message:'delete done work'}))
+app.post('/update',(req,res)=>res.status(200).send({message:'update work'}))
+
+
+
+
 module.exports=app
